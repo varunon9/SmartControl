@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_weight="1"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="me.varunon9.smartcontrol.TouchPad" >
+
+    <TextView
+        android:id="@+id/touchPad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="97" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/leftButton"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="40"
+            android:onClick="leftClick"
+            android:text="Left" />
+        <EditText
+            android:id="@+id/typeCharacter"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="20"
+            android:hint="Type" />
+        <Button
+            android:id="@+id/rightButton"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="40"
+            android:onClick="rightClick"
+            android:text="Right" />
+    </LinearLayout>
+
+</LinearLayout>
